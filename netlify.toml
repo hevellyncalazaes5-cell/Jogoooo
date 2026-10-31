@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/tribunal"
+  to = "/.netlify/functions/tribunal-ai"
+  status = 200

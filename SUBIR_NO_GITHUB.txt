@@ -1,0 +1,12 @@
+TRIBUNAL — PACOTE PARA ENVIO PELO NAVEGADOR
+
+Este pacote contém todos os 120 casos, organizados em seis lotes carregados sob demanda.
+
+1. Extraia o ZIP.
+2. Envie todos os arquivos e pastas DE DENTRO de project para a raiz do repositório, mantendo as subpastas.
+3. Confirme que index.html e netlify.toml ficaram na raiz do repositório.
+4. Conecte o repositório ao seu projeto Netlify e publique.
+
+Se havia arquivos antigos no repositório, os novos app/bootstrap.js, app/case-provider.js e cases/index.json precisam substituir os anteriores. Arquivos individuais antigos CASO-*.json que permanecerem não são consultados por esta edição.
+
+As variáveis privadas continuam configuradas no Netlify. A organização em lotes resolve o limite de quantidade de arquivos no envio do GitHub; a conexão IA depende da configuração do servidor.

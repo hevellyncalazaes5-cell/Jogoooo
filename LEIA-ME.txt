@@ -1,13 +1,9 @@
-TRIBUNAL IX — FÓRUM SIMULADO
+TRIBUNAL — PUBLICAÇÃO SIMPLES
 
-Abra index.html por servidor web para usar o catálogo modular de 120 casos. Para acesso sem rede, abra TRIBUNAL_IX_OFFLINE.html.
+O index.html inclui o visual, os scripts, os 120 casos, os retratos e a consulta às leis. O jogo abre sem as antigas pastas app, assets ou cases.
 
-A expansão preserva os 100 dossiês originais e acrescenta 20 roteiros fictícios com registros materiais, testemunhos, laudos, pedidos, datas e limitações. Os novos cenários usam temas de decisões públicas e legislação oficial, mas não reproduzem autos ou pessoas reais.
+Extraia o ZIP e envie o conteúdo inteiro para a raiz do repositório. index.html e netlify.toml devem ficar na raiz. Preserve netlify/functions/tribunal-ai.js para a função Gemini. As variáveis privadas continuam apenas no Netlify.
 
-Há importação de novos casos JSON; anexos por processo (TXT, MD, CSV, JSON, PDF, PNG/JPG); prompts separados para juiz e testemunha IA; referência jurídica em textos TXT; pesquisa em legislação; múltiplas consultas/processos; negociação de honorários; adiantamentos independentes para perícia e diligências, prestação de contas e reembolso; carreira privada e carreira pública com remuneração ficcional.
+Para publicar no Netlify, conecte o repositório e publique depois de cadastrar as variáveis GEMINI_API_KEY e TRIBUNAL_AI_ACCESS_TOKEN, disponíveis para Functions. TRIBUNAL_ALLOWED_ORIGIN deve ser o endereço do site, sem barra final. O jogo usa o endereço do próprio servidor automaticamente.
 
-IA online: configure Netlify e variáveis do servidor conforme docs/COMO_CONFIGURAR_IA_E_CASOS.md e .env.example. A chave Gemini permanece no servidor. O jogo inicia em modo local e só marca o modelo conectado depois de testar o provedor. A audiência pode conversar com juiz ou testemunha IA. A minuta de decisão cita documentos juntados e requer confirmação do jogador; em Júri, pronúncia agenda plenário, e condenação só pode ser proposta depois do plenário. Falha de serviço não cria decisão de contingência.
-
-Toda pessoa, documento, valor, comarca e fato narrativo é ficcional. Em especial, o hash de arquivo não prova autenticidade; anexar não equivale a juntar; juntar não resolve controvérsia. PDF e imagem são guardados para inspeção, sem OCR automático. Os roteiros não são aconselhamento jurídico. Textos de lei no pacote têm data de consulta e remetem às fontes oficiais para conferir vigência e redação aplicável.
-
-Cópias de segurança incluem o progresso e anexos locais. Guarde o arquivo exportado com segurança; ele pode incluir documentos importados.
+Esta edição contém os mesmos 120 casos e correções da edição IX. Os recursos narrativos anteriormente informados como pendentes continuam pendentes.
